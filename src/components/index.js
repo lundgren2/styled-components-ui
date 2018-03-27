@@ -6,6 +6,10 @@ const Demos = {
   TypographyDemo,
 }
 const Typography = {
-  H1, H2, H3, H4, H5
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
 }
-export { Container, Row, Col, H1, H2, H3, H4, H5,  Demos }
+export { Container, Row, Col, H1, H2, H3, H4, H5, Demos }
