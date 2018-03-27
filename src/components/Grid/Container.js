@@ -15,7 +15,7 @@ type Props = {
   width?: string,
 }
 
-function PageContainer(props: Props) {
+function ContainerContainer(props: Props) {
   const { children, tagName, debug, fluid, ...rest } = props
   const newChildren = passOn(children, [Row, Hidden], child => {
     return {
@@ -26,7 +26,7 @@ function PageContainer(props: Props) {
   return React.createElement(tagName || 'div', rest, newChildren)
 }
 
-const Page = styled(PageContainer)`
+const Container = styled(ContainerContainer)`
   ${props =>
     props.fluid
       ? 'width: 100%;'
@@ -37,4 +37,4 @@ const Page = styled(PageContainer)`
     `};
 `
 
-export default Page
+export default Container

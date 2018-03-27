@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Col, Row, Page } from '../components/Grid'
+import { Col, Row, Container } from '../components/Grid'
 
 const IndexPage = () => (
-  <Page>
+  <Container>
     <Row>
       <Col sm={12} md={6}>
         <h1>Hi people</h1>
@@ -15,7 +15,7 @@ const IndexPage = () => (
         <h1>Test grid</h1>
       </Col>
     </Row>
-  </Page>
+  </Container>
 )
 
 export default IndexPage
