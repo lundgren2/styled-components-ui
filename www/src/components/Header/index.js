@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
 import Logo from './Logo'
-import { Col, Row, Container } from '../Grid'
+import { Col, Row, Container } from '../../../../src/components'
 
 // TODO: define constant for fixed nav
 const Wrapper = styled('header')`

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Col, Row, Container } from '../components/Grid'
+import { Col, Row, Container } from '../../../src/components'
 
 const SecondPage = () => (
   <Container>
