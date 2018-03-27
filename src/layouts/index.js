@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { injectGlobal } from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 
 import Header from '../components/Header'
 import './index.css'
@@ -15,6 +15,10 @@ injectGlobal`
   }
 `
 
+const Main = styled('main')`
+  padding-top: 4em;
+`
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -25,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <main>{children()}</main>
+    <Main>{children()}</Main>
   </div>
 )
 
