@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled, { injectGlobal, ThemeProvider } from 'styled-components'
-import { theme } from '../../../src/components'
+import { theme, Container, Button } from '../../../src/components'
 
 import Header from '../components/Header'
 import './index.css'
@@ -45,7 +45,9 @@ class TemplateWrapper extends Component {
           />
           <Header />
           <Main>{children()}</Main>
-          <button onClick={this.toggleMode}>Toggle darkmode</button>
+          <Container>
+            <Button onClick={this.toggleMode}>Toggle darkmode</Button>
+          </Container>
         </div>
       </ThemeProvider>
     )

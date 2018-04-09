@@ -4,10 +4,13 @@
   "version": "0.0.1",
   "author": "Tobias Lundgren <tobias@lundgrendesign.se>",
   "dependencies": {
+    "gatsby-cli": "^1.1.49",
     "react": "^16.2.0",
     "styled-components": "^3.2.3"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

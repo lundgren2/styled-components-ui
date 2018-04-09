@@ -1,10 +1,7 @@
 import { Container, Row, Col } from './Grid'
-import { H1, H2, H3, H4, H5, TypographyDemo } from './Typography'
+import { H1, H2, H3, H4, H5 } from './Typography'
+import Button from './Button'
 import theme from '../utils/variables'
-
-const Demos = {
-  TypographyDemo,
-}
 
 const Typography = {
   H1,
@@ -13,4 +10,4 @@ const Typography = {
   H4,
   H5,
 }
-export default { Container, Row, Col, ...Typography, Demos, theme }
+export default { theme, Container, Row, Col, ...Typography, Button }

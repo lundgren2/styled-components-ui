@@ -1,20 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Col, Row, Container, H1, H2 } from '../../../src/components/index'
+import { Col, Row, Container, H1, H2 } from '../../../src/components'
 
-import Demo from '../components/Demo'
+import { TypographyDemo } from '../../../src/components/Demo'
 
 const IndexPage = () => (
   <Container>
     <Row>
       <Col sm={12} md={6}>
         <H1 alt>Hi people</H1>
-        <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
+        <p>
+          cardigan single-origin coffee flannel before they sold out Marfa lomo
+          mumblecore master cleanse fashion axe American Apparel whatever
+          Brooklyn Tumblr Truffaut Banksy butcher Thundercats gastropub leggings
+          food truck irony.
+        </p>
         <Link to="/page-2/">Go to page 2</Link>
       </Col>
       <Col sm={12} md={6}>
-        <Demo />
+        <TypographyDemo />
       </Col>
     </Row>
 
